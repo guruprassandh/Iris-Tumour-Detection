@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Home - Iris Tumor Detector{% endblock %}
+
+{% block content %}
+<div class="content-section">
+    <h2>What is an Iris Tumor?</h2>
+    <img class="main-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEEJ0A8sb2KHB9Y-i-C80Kvbt7NEM9BlrtXA&s" alt="Iris Tumor Image">
+    <p>
+        An iris tumor is an abnormal growth in the iris, which is the colored part of the eye. 
+        These tumors can be benign (non-cancerous) or malignant (cancerous). Early detection 
+        and treatment are crucial for better outcomes. 
+    </p>
+    <img class="awareness-image" src="https://www.aaojournal.org/cms/10.1016/j.ophtha.2011.07.059/asset/02f4aef9-25ca-43ad-bea0-0fb2a75c0ce6/main.assets/gr4_lrg.jpg" alt="Awareness Image">
+    <p>
+        Awareness about iris tumors is essential for timely intervention. Regular eye check-ups 
+        and understanding the symptoms can help in early diagnosis.
+    </p>
+</div>
+<div class="buttons">
+    <a href="{% url 'register' %}" class="button">Register</a>
+    <a href="{% url 'upload_image' %}" class="button">Upload Image</a>
+</div>
+{% endblock %}

@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2 style="text-align: center; color: rgb(32, 61, 111);">Detection Result</h2>
+<p style="text-align: center;">{{ result }}</p>
+<a href="{% url 'upload_image' %}" style="display: block; text-align: center; margin-top: 20px;">Try another image</a>
+{% endblock %}
